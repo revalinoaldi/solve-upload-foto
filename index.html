@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="id_ID" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
+
+<head>
+
+    <meta charset="utf-8" />
+    <!-- CSRF Token -->
+    <!-- <meta name="csrf-token" content="{{ csrf_token() }}"> -->
+
+    <title>DOCS</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi aliquam ea mollitia hic recusandae quod, corporis harum fugit officiis omnis quae sunt reprehenderit minima ducimus laborum atque aspernatur maxime consectetur!" name="description" />
+    <meta content="BOXTIP" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="/assets/images/favicon.ico">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Style -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css">
+
+    <link rel="stylesheet" href="./landing_page/css/global.css" />
+    <link rel="stylesheet" href="./landing_page/css/index.css" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12" id="notification-alert"></div>
+        </div>
+        <div class="row" style="background-color: #fff;">
+            <div class="col-12 p-3">
+                <div class="mb-3">
+                    <h1 class="modal-title fs-5" id="contactusLabel">Form Contact Us</h1>
+                </div>
+                <div class="" style="position: relative;">
+                    <form class="row g-3 needs-validation" id="oid-form" novalidate enctype="multipart/form-data">
+                        <div class="col-md-12">
+                            <label for="imei" class="form-label">IMEI<span class="text-danger">*</span></label>
+                            <input type="text" id="imei" name="imei" required placeholder="Masukan Imei">
+                            <div class="invalid-feedback">
+                                Harap masukan Imei anda!
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <label for="nik" class="form-label">NIK<span class="text-danger">*</span></label>
+                            <input type="text" id="nik" name="nik" required placeholder="Masukan NIK">
+                            <div class="invalid-feedback">
+                                Harap masukan NIK anda!
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="name" class="form-label">Nama Lengkap<span class="text-danger">*</span></label>
+                            <input type="text" id="name" name="name" required placeholder="Masukan Nama Lengkap">
+                            <div class="invalid-feedback">
+                                Harap masukan Nama Lengkap anda!
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="phone" class="form-label">Nomor Handphone (WhatsApp)<span class="text-danger">*</span></label>
+                            <input type="text" class="numbering" id="phone" name="phone" required placeholder="Masukan Nomor Handphone (WhatsApp)">
+                            <div class="invalid-feedback">
+                                Harap masukan Nomor Handphone (WhatsApp) anda!
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Email<span class="text-danger">*</span></label>
+                            <input type="email" id="email" name="email" required placeholder="Masukan Email aktif">
+                            <div class="invalid-feedback">
+                                Harap masukan Email aktif anda!
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="uploadImage" class="form-label">Image<span class="text-danger">*</span></label>
+                            <input type="file" id="image_receipt" name="image_receipt" required accept="image/*">
+                            <div class="invalid-feedback">
+                                Upload Image!
+                            </div>
+                        </div>
+                        <div class="col-12 text-end">
+                            <button type="button" class="btn btn-secondary close-form" data-bs-dismiss="modal">Close</button>
+                            <button class="btn btn-danger" type="submit">Submit form</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+
+        $(document).ready(() => {
+            AOS.init();
+        })
+
+
+
+        $(function() {
+            
+            var forms = document.querySelectorAll('.needs-validation')
+            const host = window.location.hostname
+            let params = (host === '127.0.0.1' || host === 'http://activity-frontend.test/') ? "http://backend-activity.test" : `${host}/backend-activity/`
+            //const _token   = $('meta[name="csrf-token"]').attr('content');
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    event.preventDefault()
+                    $("#preloder").fadeIn();
+
+                    if (!form.checkValidity()) {
+                        event.stopPropagation()
+                        $("#preloder").fadeOut();
+                    }
+
+
+                    form.classList.add('was-validated')
+
+                    if (form.checkValidity()) {
+                        // event.stopPropagation()
+                        // $("#preloder").fadeOut();
+                        var formData = new FormData(event.target);
+                        let formText = new FormData()
+                        let formAssets = new FormData()
+
+                        for (var pair of formData.entries()) {
+                            if(pair[0] === 'imei'){
+                                formText.append(`${pair[0]}`, pair[1])
+                                formAssets.append(`${pair[0]}`, pair[1])
+                            }else if(pair[0] !== 'image_receipt'){
+                                formText.append(`${pair[0]}`, pair[1])
+                            }else{
+                                formAssets.append(`${pair[0]}`, pair[1])
+                            }
+                        }
+                        
+                        let promiseTextForm = new Promise(async (resolve, reject) => {
+                            try{
+                                const fetchData = await fetch('http://backend-activity.test/api/activity/process',{
+                                    method: 'POST',
+                                    headers: {
+                                        'Accept': 'application/json',
+                                    },
+                                    body: formText
+                                })
+                                const data = await fetchData.json()
+                                if(data.code === 201){
+                                    resolve({
+                                        'result': true,
+                                        'item': 'text',
+                                        'data': []
+                                    })
+                                }else{
+                                    throw new Error('Error this section', fetchData)
+                                }
+                            }catch(err){
+                                reject({
+                                    'result': false,
+                                    'item': 'text',
+                                    'data': err
+                                })
+                            }
+                        })
+
+                        let promiseAssetsForm = new Promise(async (resolve, reject) => {
+                            try{
+                                const fetchData = await fetch('http://backend-activity.test/api/activity/upload',{
+                                    method: 'POST',
+                                    headers: {
+                                        'Accept': 'application/json',
+                                    },
+                                    body: formAssets
+                                })
+                                const data = await fetchData.json()
+                                if(data.code === 201){
+                                    resolve({
+                                        'result': true,
+                                        'item': 'assets',
+                                        'data': []
+                                    })
+                                }else{
+                                    throw new Error('Error this section', fetchData)
+                                }
+                            }catch(err){
+                                reject({
+                                    'result': false,
+                                    'item': 'assets',
+                                    'data': err
+                                })
+                            }
+                        })
+
+                        const notifSection = $('#notification-alert')
+                        Promise.allSettled([promiseTextForm, promiseAssetsForm]).then((results) => {
+                            var html = ''
+                             results.forEach((result) => {
+                                if(result.status === 'fulfilled'){
+                                    let text = ''
+                                    if(result.value.item == 'text') {
+                                        text = 'Successful Submit Form'
+                                    }else{
+                                        text = 'Successful Upload Image'
+                                    }
+                                    html += `<div class="alert alert-success" role="alert">${text}!</div>`
+                                }else{
+                                    let text = ''
+                                    if(result.reason.item == 'text') {
+                                        text = 'Error! Failed Submit Form'
+                                    }else{
+                                        text = 'Error! Failed Upload Image'
+                                    }
+                                    html += `<div class="alert alert-danger" role="alert">${text}!</div>`
+                                }
+                            })
+                            notifSection.append(html)
+                            $("#preloder").fadeOut();
+                        })
+                    }
+
+                }, false)
+            })
+        });
+    </script>
+</body>
+</html>

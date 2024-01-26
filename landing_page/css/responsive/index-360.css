@@ -1,0 +1,31 @@
+@media (max-width: 424.98px) {
+    .boxtip-mobile-landing-page {
+        margin: 0 auto;
+        position: relative;
+        background-color: var(--neutral-white);
+        width: 100% ;
+        max-width: 100% !important;
+        overflow: hidden;
+        align-items: left;
+        text-align: left;
+        font-size: var(--font-size-2xl);
+        color: var(--neutral-black-for-text);
+        font-family: var(--font-inter);
+    }
+    .icon-core-value {
+        left: 16px !important;
+    }
+    .icon-core-value1 {
+        top: 15vw !important;
+        left: 75vw !important;
+    }
+    .icon-core-value2 {
+        left: 60vw !important;
+    }
+    .main-delivery-man {
+        width: 100% !important;
+    }
+    .image-9-icon {
+        height: 200px !important;
+    }
+}

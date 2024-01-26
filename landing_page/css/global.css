@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    line-height: normal;
+}
+
+@font-face {
+    font-family: 'inter-light';
+    src: url('./../font/inter/static/Inter-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'inter-medium';
+    src: url('./../font/inter/static/Inter-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'inter-bold';
+    src: url('./../font/inter/static/Inter-Bold.ttf') format('truetype');
+}
+
+.inter-light {
+    font-family: 'inter-light';
+}
+
+.inter-medium {
+    font-family: 'inter-medium';
+}
+
+.inter-bold {
+    font-family: 'inter-bold';
+}
+
+:root {
+    /* fonts */
+    --font-inter: Inter;
+    --font-inter-light: 'inter-light';
+    --font-inter-medium: 'inter-medium';
+    --font-bold: 'inter-bold';
+    --font-codec-pro: "Codec Pro";
+
+    /* font sizes */
+    --font-size-base: 16px;
+    --font-size-8xl-9: 27.9px;
+    --font-size-2xl: 21px;
+    --font-size-5xl: 24px;
+    --font-size-sm: 14px;
+
+    /* Colors */
+    --neutral-white: #fff;
+    --moodboard-1-red: #e02419;
+    --neutral-black-for-text: #2d2d2d;
+    --moodboard-1-yellow: #ffcc00;
+    --color-whitesmoke-100: #f9f9f9;
+    --color-whitesmoke-200: #f1f5f8;
+    --color-darkgray-100: #ababab;
+    --color-gainsboro: #d9d9d9;
+    --color-gray: #888;
+
+    /* Gaps */
+    --gap-13xl: 32px;
+    --gap-base: 16px;
+    --gap-5xs: 8px;
+    --gap-5xl: 24px;
+    --gap-9xs: 4px;
+
+    /* Paddings */
+    --padding-21xl: 40px;
+    --padding-base: 16px;
+    --padding-5xs: 8px;
+    --padding-5xl: 24px;
+    --padding-13xl: 32px;
+
+    /* Border radiuses */
+    --br-7xl: 26px;
+    --br-13xl: 32px;
+    --br-81xl: 100px;
+    --br-5xs: 8px;
+}

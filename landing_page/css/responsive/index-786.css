@@ -1,0 +1,25 @@
+@media (min-width: 768px) {
+    .boxtip-mobile-landing-page {
+        margin: 0 auto;
+        position: relative;
+        background-color: var(--neutral-white);
+        width: 100%;
+        max-width: 50% !important;
+        overflow: hidden;
+        align-items: left;
+        text-align: left;
+        font-size: var(--font-size-2xl);
+        color: var(--neutral-black-for-text);
+        font-family: var(--font-inter);
+    }
+
+    .icon-core-value {
+        left: 8vw !important;
+    }
+    .icon-core-value1 {
+        left: 40vw !important;
+    }
+    .icon-core-value2 {
+        left: 35vw !important;
+    }
+}
